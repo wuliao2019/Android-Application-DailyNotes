@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">每日笔记</string>
+    <string name="title_home">今天</string>
+    <string name="title_notes">笔记</string>
+    <string name="title_todo">待办</string>
+    <string name="deleteItem">删除笔记</string>
+    <string name="month_day">%1$d月%2$d日</string>
+    <string name="year_month">%1$d年%2$d月</string>
+    <string name="editTD">编辑待办</string>
+    <string name="DelTD">删除待办</string>
+</resources>
