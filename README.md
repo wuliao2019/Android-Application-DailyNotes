@@ -20,15 +20,15 @@ com.contrarywind:Android-PickerView:4.1.9（滚动选择器）
 生活中我们经常会遇到一些场景需要我们记一些笔记，并将这些笔记归类，方便之后查看。另外，将计划要做的任务整理成待办列表有助于我们安排和规划时间，也方便记录完成情况。基于这些需求，我设计了“每日笔记”APP，实现了这些功能。本应用主要分为三个部分：
 1. “今天”：该页从网络获取并展示了当日的各种信息，包括年月日星期、节假日、农历日期、黄历以及历史上的今天事件列表。
 
-<img src="Screenshots/P1.jpg" width="300px">  <img src="Screenshots/P4.jpg" width="300px">
+<img src="Screenshots/P1.jpg" width="200px">  <img src="Screenshots/P4.jpg" width="200px">
 
 2. “笔记”：该页展示了记录的笔记，并按照设置的类别分类，按修改时间排序。可以进行添加、删除和修改笔记操作。对类别可以进行增加、修改、删除和自定义排序操作。
 
-<img src="Screenshots/P2.jpg" width="300px">  <img src="Screenshots/P5.jpg" width="300px">
+<img src="Screenshots/P2.jpg" width="200px">  <img src="Screenshots/P5.jpg" width="200px">
 
 3. “待办”：该页展示了待办事项，每个条目都有事件标题、事件时间和完成标记。待办事项可以进行添加、删除、修改操作。待办条目按照完成情况和事件时间排序。
 
-<img src="Screenshots/P3.jpg" width="300px">  <img src="Screenshots/P6.jpg" width="300px">
+<img src="Screenshots/P3.jpg" width="200px">  <img src="Screenshots/P6.jpg" width="200px">
 
 特色：适配了深色模式、每个RecyclerView都有进入动画。条目使用了圆角矩形，添加、删除、排序、修改都有动画。
 
