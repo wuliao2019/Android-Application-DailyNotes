@@ -16,7 +16,7 @@ com.contrarywind:Android-PickerView:4.1.9（滚动选择器）
 (源码和资源在app/src/main)
 
 
-#### 软件设计意图、功能介绍和特色
+### 软件设计意图、功能介绍和特色
 生活中我们经常会遇到一些场景需要我们记一些笔记，并将这些笔记归类，方便之后查看。另外，将计划要做的任务整理成待办列表有助于我们安排和规划时间，也方便记录完成情况。基于这些需求，我设计了“每日笔记”APP，实现了这些功能。本应用主要分为三个部分：
 1. “今天”：该页从网络获取并展示了当日的各种信息，包括年月日星期、节假日、农历日期、黄历以及历史上的今天事件列表。
 
@@ -32,12 +32,12 @@ com.contrarywind:Android-PickerView:4.1.9（滚动选择器）
 
 特色：适配了深色模式、每个RecyclerView都有进入动画。条目使用了圆角矩形，添加、删除、排序、修改都有动画。
 
-#### 设计说明
+### 设计说明
 本应用有三个Activity和可变数量的Fragment，EditNotesActivity用于添加和编辑笔记；TypeSetActivity用于编辑类别。MainActivity的ViewPager包含多个个Fragment，每个Fragment展示某一种类别的笔记列表，笔记按最后编辑时间排序。
 
 database包含有操作数据库的方法，以及存放进数据库的类NotesItem，笔记类别、笔记条目、待办事项都以NotesItem类的形式存放在数据库，通过type变量进行区分。ui包用以控制界面，其中home包控制“今天”页，HomeFragment是页面碎片，HistoryAdapter和HistoryItem是历史上的今天RecyclerView列表的适配器以及其中条目的类；notes包控制“笔记”页，NotesFragment是该页页面碎片，NotesPageAdapter和NotesPage是ViewPager的适配器和页面类，NotesAdapter是笔记RecyclerView的适配器，EditNotesActivity和TypeSetActivity实现笔记编辑页和笔记类别编辑页；todo包控制“待办”页，TodoFragment是该页页面碎片，TodoAdapter是待办事项RecyclerView的适配器。util包存放网络请求工具类RequestUtil。MainActivity控制主界面，在笔记页点击添加按钮或点击某条笔记会跳转到笔记编辑EditNotesActivity，而点击右上角设置图标会跳转到类别编辑TypeSetActivity，页面跳转通过Intent传递参数。
 
-#### 实验成果
+### 实验成果
 打开应用后首先进入的是“今天”页，该页展示了当日的基本信息，包括年月日星期、节假日、农历日期、黄历和历史上的今天发生的事件，历史上的今天部分可以上下滑动。其中黄历和历史上的今天是从网络获取并以JSON字符串的形式通过SharedPreferences存储在本地。当创建这一页Fragment时如果当前日期与本地存储中的相同则从本地读取详细信息并展示，否则从网络获取并覆盖本地信息、更新本地存储的日期，这样一天只需进行一次网络请求。
      
 图表 7 笔记页界面
@@ -76,7 +76,7 @@ database包含有操作数据库的方法，以及存放进数据库的类NotesI
 
 
 
-#### 应用截图
+### 应用截图
 -|-|-
 :-------------------------:|:-------------------------:|:-------------------------:
 ![image](Screenshots/P7.jpg) | ![image](Screenshots/P8.jpg) | ![image](Screenshots/P9.jpg)
