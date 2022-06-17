@@ -123,11 +123,11 @@ public class HomeFragment extends Fragment {
     private void queryWeather(String date, String date2) {
         Map<String, Object> params = new HashMap<>();//组合参数
         params.put("date", date);
-        params.put("key", "3c597c217c6e7209041b5284b03a01ba");
+        params.put("key", "******"); //填写在聚合数据申请的万年历接口key
         String response = doGet("http://v.juhe.cn/calendar/day", urlEncode(params));
         params = new HashMap<>();//组合参数
         params.put("date", date2);
-        params.put("key", "db02e1d295dc308a0eba1223a5b3115f");
+        params.put("key", "******"); //填写在聚合数据申请的历史上的今天接口key
         String response2 = doGet("http://v.juhe.cn/todayOnhistory/queryEvent.php", urlEncode(params));
         try {
             JSONObject jsonObject = new JSONObject(response);
