@@ -19,16 +19,19 @@ com.contrarywind:Android-PickerView:4.1.9（滚动选择器）
 #### 软件设计意图、功能介绍和特色
 生活中我们经常会遇到一些场景需要我们记一些笔记，并将这些笔记归类，方便之后查看。另外，将计划要做的任务整理成待办列表有助于我们安排和规划时间，也方便记录完成情况。基于这些需求，我设计了“每日笔记”APP，实现了这些功能。本应用主要分为三个部分：
 1. “今天”：该页从网络获取并展示了当日的各种信息，包括年月日星期、节假日、农历日期、黄历以及历史上的今天事件列表。
+
 -|-
 :-------------------------:|:-------------------------:
 ![image](Screenshots/P1.jpg) | ![image](Screenshots/P4.jpg)
 
 2. “笔记”：该页展示了记录的笔记，并按照设置的类别分类，按修改时间排序。可以进行添加、删除和修改笔记操作。对类别可以进行增加、修改、删除和自定义排序操作。
+
 -|-
 :-------------------------:|:-------------------------:
 ![image](Screenshots/P2.jpg) | ![image](Screenshots/P5.jpg)
 
 3. “待办”：该页展示了待办事项，每个条目都有事件标题、事件时间和完成标记。待办事项可以进行添加、删除、修改操作。待办条目按照完成情况和事件时间排序。
+
 -|-
 :-------------------------:|:-------------------------:
 ![image](Screenshots/P3.jpg) | ![image](Screenshots/P6.jpg)
@@ -82,8 +85,6 @@ database包含有操作数据库的方法，以及存放进数据库的类NotesI
 #### 应用截图
 -|-|-
 :-------------------------:|:-------------------------:|:-------------------------:
-![image](Screenshots/P1.jpg) | ![image](Screenshots/P2.jpg) | ![image](Screenshots/P3.jpg)
-![image](Screenshots/P4.jpg) | ![image](Screenshots/P5.jpg) | ![image](Screenshots/P6.jpg)
 ![image](Screenshots/P7.jpg) | ![image](Screenshots/P8.jpg) | ![image](Screenshots/P9.jpg)
 ![image](Screenshots/P10.jpg) | ![image](Screenshots/P11.jpg) | ![image](Screenshots/P12.jpg)
 ![image](Screenshots/P13.jpg) | ![image](Screenshots/P14.jpg) | ![image](Screenshots/P15.jpg)
